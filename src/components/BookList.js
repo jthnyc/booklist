@@ -7,6 +7,7 @@ const Booklist = () => {
   return books.length ? (
     <div className="book-list">
       <ul>
+        {console.log(books)}
         {books.map((book) => (
           <BookDetails key={book.id} book={book} />
         ))}
